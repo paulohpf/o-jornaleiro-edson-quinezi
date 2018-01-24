@@ -1,0 +1,170 @@
+
+
+*{
+	font-family: Trebuchet MS, Helvetica, sans-serif;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+h4{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+body {
+	background: #e0e0e0;
+}
+
+.container {
+	max-width: 1170px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;	
+	padding: 0 40px;
+}
+
+nav:before {
+	display: block;
+	width: 100%;
+	height:100%;
+	background: url('../images/topo.png') no-repeat center;
+	/*background: linear-gradient(to right, #014579,#014174);*/
+	content: '';
+	z-index: -3;
+}
+
+nav {
+	background-image: url('../images/topo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background: linear-gradient(to right, #014579,#014174);
+	width: 100%;
+    height: 280px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding-bottom: 45px;	
+}
+
+nav .container {
+	position: absolute;
+    top: calc( 50% - 8px);
+    bottom: 0;
+}
+
+nav .menu {
+	background: #fff;
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+nav .menu a {
+	text-decoration: none;
+	color: #777777;
+}
+
+nav .menu a + a {
+	padding-left: 15px;
+}
+
+section.content {
+	min-height: 500px;
+	margin-top: 20px;
+}
+
+section.content .blockLeft {
+	width: 75%;
+}
+
+section.content .post-content{
+	background: #fff;
+	width: 100%;
+	min-height: 150px;
+}
+
+section.content .blockRight {
+	width: 23%;
+}
+
+section.content .sidebar {
+	width: 100%;
+}
+
+section.content .sidebar .inside {
+	width: 100%;
+	min-height: 100px;
+	background: #fff;
+}
+
+.sidebar .title{
+	width: 100%;
+	background: #003466;
+	padding: 12px;
+	margin: 0;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	color: #fff;
+	background: #003466;
+}
+
+footer .container {
+    padding: 40px;
+    height: 100%;
+    position: relative;    
+}
+
+footer .container h4{
+	margin: 0;
+	padding: 0;
+    font-weight: 100;	
+}
+
+footer .logoFooter:before {
+	background: url('../images/logo_footer.png') no-repeat;
+	width: 339px;
+	height: 22px;
+	content: '';
+	display: block;
+	float: right;
+}
+
+.blockLeft {
+	float: left;
+	width: 50%;
+}
+
+.blockRight {
+	float: right;
+	width: 50%;
+}
+
+@media (max-width: 420px){
+	
+	footer .container {
+		padding: 20px;
+	}
+
+	footer .blockLeft{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	footer .blockRight{
+		margin-top: 15px;
+		float: none;
+		width: 100%;
+	}
+
+	footer .logoFooter:before{
+		width: 100%;
+		background-size: 100%;
+	}
+
+}
